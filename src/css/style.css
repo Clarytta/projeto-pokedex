@@ -1,0 +1,265 @@
+body {
+    max-width: 1280px;
+    margin: 0 auto;
+    background-image: linear-gradient(to bottom, #bdbcc7, #9a99a8);
+    color: #222;
+}
+
+body.modo-escuro { /*javascript*/
+     background-image: linear-gradient(to bottom, #232327, #141416);
+}
+
+/*CABEÇALHO*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 25px;
+}
+
+header .logo, 
+header .imagem-botao {
+    width: 48px;
+
+    transition: .4s ease-in-out;
+}
+
+header .logo:hover, 
+header .imagem-botao:hover {
+    transform: scale(1.08);
+    cursor: pointer;
+}
+
+header #titulo {
+    color: #6b6b6b;
+    font-weight: 300;
+    font-size: 26px;
+    letter-spacing: 3px;
+
+    transition: .8s ease-in-out;
+}
+
+header #titulo:hover {
+    transform: translateY(-3px);
+    color: #4d4d4d;
+    cursor: pointer;
+}
+
+
+body.modo-escuro header #titulo {
+    color: #ffffff; /* para o modo escuro */
+}
+
+body.modo-escuro header #titulo:hover {
+    color: #cccccc; /* para o modo escuro */
+}
+
+header #alterar-tema {
+    background-color: transparent;
+    border: none;
+}
+
+/*CONTEÚDO DA POKEDÉX*/
+main {
+    padding: 25px;
+}
+
+main .listagem-pokemon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+main .cartao-pokemon {
+    background-color: #e1d1ee;
+    width: 200px;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 10px;
+
+    transition: .18s ease-in-out
+}
+
+main.modo-escuro .cartao-pokemon {
+    background-color: #77697c;
+    color: #e9e9e9;
+    text-shadow: 1px 1px 2px #000;
+}
+
+main .cartao-pokemon:hover {
+    transform: scale(1.02);
+    background-color: #985df8;
+    cursor: pointer;
+}
+
+main.modo-escuro .cartao-pokemon:hover {
+    background-color: #6212e2;
+}
+
+main .cartao-pokemon .informacoes {
+    display: flex;
+    justify-content: space-between;
+
+    border: 1px solid #333;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-radius: 10px;
+}
+
+main.modo-escuro .cartao-pokemon .informacoes {
+    border: 1px solid #d4d4d4;
+    border-top-color: transparent;
+    border-left-color: transparent;
+}
+
+main .cartao-pokemon .informacoes span{
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+main .cartao-pokemon .gif {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+main .cartao-pokemon .tipos {
+    display: flex;
+    gap: 15px;
+}
+
+main .cartao-pokemon .tipo {
+    padding: 8px;
+    border-radius: 5px;
+    color: #fefefe;
+    text-shadow: 2px 2px 2px #252525;
+    box-shadow: 1px 2px 4px rgb(0, 0, 0, 0.42);
+}
+
+main .grama {
+    background-color: #77CC55;
+}
+
+main .veneno {
+    background-color: #AA5599;
+}
+
+main .fogo {
+    background-color: #FF4422;
+}
+
+main .agua {
+    background-color: #3399FF;
+}
+
+main .inseto {
+    background-color: #AABB22;
+}
+
+main .normal {
+    background-color: #AAAA99;
+}
+
+main .eletrico {
+    background-color: #FFCC33;
+}
+
+main .voador {
+    background-color: #8899FF;
+}
+
+main .terra {
+    background-color: #DDBB55;
+}
+
+main .psiquico {
+    background-color: #FD5498;
+}
+
+main .gelo {
+    background-color: #66CCFF;
+}
+
+main .aco {
+    background-color: #AAAABB;
+}
+
+main .fada {
+    background-color: #EE99EE;
+}
+
+main .lutador {
+    background-color: #BB5544;
+}
+
+main .pedra {
+    background-color: #BBAA66;
+}
+
+main .fantasma {
+    background-color: #6666BB;
+}
+
+main .dragao {
+    background-color: #7766EE;
+}
+
+main .descricao {
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+main.modo-escuro .descricao {
+    color: #e9e9e9;
+    text-shadow: 1px 1px 2px #000;
+}
+
+footer {
+    border-top: 1px solid rgb(80, 80, 80, 0.4);
+}
+
+footer.modo-escuro {
+    border-color: rgba(216, 216, 216, 0.3);
+}
+
+footer h2 {
+    margin-top: 5px;
+    font-size: 10px;
+    font-weight: 300;
+    font-style: italic;
+    color: #000;
+}
+
+footer.modo-escuro h2 {
+    color: #f1f1f1;
+}
+
+footer h2 span {
+    font-weight: 500;
+    color: #9100d4;
+}
+
+footer.modo-escuro h2 span {
+    color: #af38ff;
+}
+
+@media (max-width: 512px) {
+    header #titulo {
+        font-size: 12px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+    }
+
+}

@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+/*
+body {
+    background-image: linear-gradient(to bottom, #e2e2e2, #aaaaaa);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#logo img,
+#alterar-tempo img  {
+    width: 50px;
+}
+
+main ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+main ul .cartao-pokemon {
+    width: 180px;
+    background-color: #eeeeee;
+    padding: 10px;
+}
+
+.cartao-pokemon img {
+    margin: 10px;
+}
+
+main ul .tipo {
+    background-color: #64ff5e;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+main ul .informacoes {
+    padding: 1px;
+    border-radius: 5px;
+    border: 2px solid #6d6d6d;
+}
+*/
